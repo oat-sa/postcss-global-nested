@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transforms a complex stylesheet 1`] = `
+"
+        .root :global([dir='rtl'] .level1 > .level2::after) {
+            border-left: 0;
+        }
+
+.root :global([dir='rtl'] .level1 > .level2 > :not(.level3):last-child) {
+                padding-left: 1rem;
+            }
+
+.root .level1 :global(button:hover), .root .level2 :global(button:hover) {
+            color: red;
+        }
+
+.content > :global(svg.interactive), .root > :global(svg.interactive) {
+      display: block
+    }
+
+.content > :global(svg + .foo),
+    .root > :global(svg + .foo),
+    .content > :global(svg.bar),
+    .root > :global(svg.bar) {
+      z-index: -3;
+    }
+
+@media screen and (max-width: 780px) {
+      .content :global(button:hover){
+        color: purple;
+        border: solid 1px red;
+      }
+      .content :global(button::after){
+        content: 'x';
+      }
+      .content :global(button > span.foo) {
+        font-size: .5em;
+      }
+}
+    "
+`;
