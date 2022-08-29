@@ -33,7 +33,7 @@ function run(input) {
                 'nesting-rules': plugin
             }
         })
-    ]).process(input);
+    ]).process(input, { from: void 0 });
 }
 
 test.each([
