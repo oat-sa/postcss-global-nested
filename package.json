@@ -1,55 +1,64 @@
 {
-  "name": "@oat-sa/postcss-global-nested",
-  "version": "0.1.0",
-  "publishConfig": {
-    "access": "public"
-  },
-  "description": "PostCSS plugin to support nesting of Svelte's :global",
-  "keywords": [
-    "postcss",
-    "css",
-    "postcss-plugin",
-    "postcss-global-nested"
-  ],
-  "scripts": {
-    "test": "jest",
-    "test:cov": "jest --coverage",
-    "lint": "eslint -c .eslintrc.js .",
-    "lint:report": "eslint -c .eslintrc.js --output-file eslint_report.json --format json ."
-  },
-  "author": "Open Assessment Technologies SA <contact@taotesting.com>",
-  "license": "GPL-2.0",
-  "repository": "oat-sa/postcss-global-nested",
-  "engines": {
-    "node": ">=12.0.0"
-  },
-  "peerDependencies": {
-    "postcss": "^8.3.0"
-  },
-  "devDependencies": {
-    "@oat-sa/browserslist-config-tao": "^1.0.1",
-    "@oat-sa/eslint-config-tao": "^1.1.1",
-    "@oat-sa/prettier-config": "^0.1.1",
-    "clean-publish": "^3.4.2",
-    "eslint": "^8.0.1",
-    "eslint-plugin-jest": "^25.2.2",
-    "jest": "^27.3.1",
-    "postcss": "^8.3.11",
-    "postcss-preset-env": "^7.7.2",
-    "prettier": "^2.7.1"
-  },
-  "jest": {
-    "coverageThreshold": {
-      "global": {
-        "statements": 100
-      }
-    }
-  },
-  "browserslist": [
-    "extends @oat-sa/browserslist-config-tao"
-  ],
-  "prettier": "@oat-sa/prettier-config",
-  "dependencies": {
-    "postcss-selector-parser": "^6.0.10"
-  }
+    "name": "@oat-sa/postcss-global-nested",
+    "version": "0.1.1",
+    "publishConfig": {
+        "access": "public"
+    },
+    "description": "PostCSS plugin to support nesting of Svelte's :global",
+    "keywords": [
+        "postcss",
+        "css",
+        "postcss-plugin",
+        "postcss-global-nested"
+    ],
+    "scripts": {
+        "test": "jest",
+        "test:cov": "jest --coverage",
+        "lint": "eslint -c .eslintrc.js .",
+        "lint:report": "eslint -c .eslintrc.js --output-file eslint_report.json --format json ."
+    },
+    "author": {
+        "name": "Open Assessment Technologies SA",
+        "email": "contact@taotesting.com"
+    },
+    "license": "GPL-2.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oat-sa/postcss-global-nested.git"
+    },
+    "engines": {
+        "node": ">=12.0.0"
+    },
+    "peerDependencies": {
+        "postcss": "^8.3.0"
+    },
+    "devDependencies": {
+        "@oat-sa/browserslist-config-tao": "^1.0.1",
+        "@oat-sa/eslint-config-tao": "^2.0.0",
+        "@oat-sa/prettier-config": "^0.1.1",
+        "clean-publish": "^4.2.0",
+        "eslint": "^8.39.0",
+        "jest": "^29.5.0",
+        "postcss": "^8.4.23",
+        "postcss-preset-env": "^7.8.3",
+        "prettier": "^2.8.8"
+    },
+    "jest": {
+        "coverageThreshold": {
+            "global": {
+                "statements": 100
+            }
+        }
+    },
+    "browserslist": [
+        "extends @oat-sa/browserslist-config-tao"
+    ],
+    "prettier": "@oat-sa/prettier-config",
+    "dependencies": {
+        "postcss-selector-parser": "^6.0.11"
+    },
+    "bugs": {
+        "url": "https://github.com/oat-sa/postcss-global-nested/issues"
+    },
+    "homepage": "https://github.com/oat-sa/postcss-global-nested#readme"
 }
